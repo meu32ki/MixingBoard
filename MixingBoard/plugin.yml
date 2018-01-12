@@ -1,0 +1,29 @@
+name: MixingBoard
+main: MixingBoard\Main
+version: 0.0.1
+api:
+  - 2.0.0
+  - 3.0.0
+  - 3.0.0-ALPHA5 #pmmp/PocketMine-MP
+load: STARTUP
+author: meu32ki
+description: Play Music
+website: http://32ki.net/
+commands:
+ m:
+  description: ""
+  usage: "/m"
+  permission: mixingboard.command
+ test:
+  description: "command for test"
+  usage: "/test"
+  permission: mixingboard
+  aliases: [test2, test3, test4]
+permissions:
+ mixingboard:
+  default: op
+  description: ""
+  children:
+   mixingboard.command:
+    default: true
+    description: ""
